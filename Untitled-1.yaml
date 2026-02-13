@@ -1,0 +1,7 @@
+echo "# urban-computing-machine" >> README.md 
+git init 
+git add README.md 
+git commit -m "primeiro commit" 
+git branch -M main 
+git remote add origin https://github.com/iagoggomess20-droid/urban-computing-machine.git
+ git push -u origin main

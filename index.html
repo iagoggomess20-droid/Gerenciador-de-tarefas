@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Gerenciador de Tarefas</h1>
+        
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Digite uma nova tarefa...">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')" class="active" id="filterAll">Todas</button>
+            <button onclick="filterTasks('pending')" id="filterPending">Pendentes</button>
+            <button onclick="filterTasks('completed')" id="filterCompleted">Concluídas</button>
+        </div>
+
+        <ul id="taskList"></ul>
+        
+        <div class="stats">
+            <span id="taskCount">0 tarefas</span>
+            <button onclick="clearCompleted()" class="clear-btn">Limpar concluídas</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
